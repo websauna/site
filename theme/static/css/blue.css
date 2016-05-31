@@ -1659,3 +1659,7 @@ footer hr {
     display: none;
   }
 }
+
+.img-feature {
+  width: 100%;
+}
