@@ -1663,3 +1663,7 @@ footer hr {
 .img-feature {
   width: 100%;
 }
+
+.site-main .img-header {
+    max-width: 80%;
+}
