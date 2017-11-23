@@ -114,7 +114,7 @@ ftp_upload: publish
 	lftp ftp://$(FTP_USER)@$(FTP_HOST) -e "mirror -R $(OUTPUTDIR) $(FTP_TARGET_DIR) ; quit"
 
 s3_upload: html
-	s3cmd sync $(OUTPUTDIR)/ s3://$(S3_BUCKET) --acl-public --no-mime-magic --guess-mime-type
+	aws s3 sync $(OUTPUTDIR)/ s3://$(S3_BUCKET) --acl public-read
 
 cf_upload: publish
 	cd $(OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
