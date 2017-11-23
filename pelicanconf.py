@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Mikko Ohtamaa'
-SITENAME = 'OPSEC - How to not get hacked'
+SITENAME = 'Websauna'
 SITEURL = ''
 
 PATH = 'content'
@@ -44,7 +44,7 @@ DEFAULT_PAGINATION = 10
 
 INDEX_SAVE_AS = 'blog.html'
 
-DISQUS_SITENAME = "opsec"
+DISQUS_SITENAME = "websauna"
 
 
 # TEMPLATE_PAGES = {"index.html", "blog.html"}
