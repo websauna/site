@@ -1,2 +1,2 @@
-pelican
+pelican<4
 markdown
